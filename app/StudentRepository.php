@@ -50,7 +50,7 @@ class StudentRepository extends BaseRepository implements StudentRepositoryInter
 
     public function findStudentById(int $id): Student
     {
-        // TODO: Implement findStudentById() method.
+            return $this->find($id);
     }
 
     public function deleteStudent(): bool

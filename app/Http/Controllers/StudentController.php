@@ -19,7 +19,8 @@ class StudentController extends Controller
      */
     public function index()
     {
-        return $this->studentRepo->listStudents();
+        $products = $this->studentRepo->listStudents();
+        return $products->user;
 
     }
 
